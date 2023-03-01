@@ -1,0 +1,124 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+a{
+	color: black;
+}
+.wrapper {
+	/*position: relative;
+	width: 1920px;
+	height: 1992px;*/
+	min-width: 100%;
+	overflow: hidden;
+
+	background: #FFFFFF;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.top-line{
+	/*position: absolute;
+	width: 1920px;
+	height: 50px;*/
+	background: #EFEFEF;
+	&__menu{
+		margin: 17px 0 17px 650px/1920px * 100%;
+		width: 447px;
+		height: 17px;
+		display: inline-flex;
+		justify-content: space-between;
+	}
+	&__link{
+		margin: 0 10px;
+		color: black;
+
+	}
+}
+
+.second-line{
+	position: relative;
+	height: 169px;
+	top: 20px;
+	&__logo{
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		border: 4px double black;
+		margin: 20px 0 0 250px;
+	}
+	&__text{
+		position: absolute;
+
+		width: 158px;
+		height: 39px;
+		left: 350px;
+		top: 41px;
+
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		letter-spacing: 0.1em;
+		color: #66C05D;
+
+	}
+	&__phone-number{
+		position: absolute;
+
+		width: 127px;
+		height: 19px;
+		right: 350px;
+		top: 50px;
+
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000000;
+	}
+	&__button{
+		position: absolute;
+		width: 170px;
+		height: 40px;
+		right: 170px;
+		top: 40px;
+
+		background: #FFFFFF;
+		border: 2px solid #66C05D;
+		border-radius: 40px;
+	}
+	&__button-text{
+		position: absolute;
+		width: 117px;
+		height: 15px;
+		right: 26px;
+		top: 12px;
+
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+
+		color: #000000;
+		background: #FFFFFF;
+		}
+
+	&__line{
+		position: absolute;
+		width: 1920px;
+		top: 120px;
+
+		border: 1px solid #EFEFEF;
+	}	
+	&__menu{
+		margin: 135px 0 0 500px/1920px * 100%;
+		width: 675px;
+		height: 19px;
+		display: inline-flex;
+		justify-content: space-between;
+	}
+
+	&__link{
+		height: 19px;
+	}
+}
