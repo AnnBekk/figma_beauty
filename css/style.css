@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -75,14 +75,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+.contacts__shops-text h3, .contacts__subs-text h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contacts__button, .sale__button {
+  background: #66C05D;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
 a {
   color: black;
 }
 
 .wrapper {
-  /*position: relative;
   width: 1920px;
-  height: 1992px;*/
   min-width: 100%;
   overflow: hidden;
   background: #FFFFFF;
@@ -97,12 +111,20 @@ a {
 
 .top-line {
   /*position: absolute;
-  width: 1920px;
-  height: 50px;*/
+  width: 1920px;*/
+  height: 50px;
   background: #EFEFEF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .top-line__menu {
-  margin: 17px 0 17px 33.8541666667%;
   width: 447px;
   height: 17px;
   display: -webkit-inline-box;
@@ -120,21 +142,20 @@ a {
 .second-line {
   position: relative;
   height: 169px;
-  top: 20px;
+  margin: 20px 0 30px 0;
+  text-align: center;
 }
 .second-line__logo {
   position: absolute;
   width: 80px;
   height: 80px;
-  border: 4px double black;
-  margin: 20px 0 0 250px;
+  margin: 20px 0 0 405px;
 }
 .second-line__text {
   position: absolute;
   width: 158px;
   height: 39px;
-  left: 350px;
-  top: 41px;
+  margin: 41px 0 0 505px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -145,9 +166,8 @@ a {
   position: absolute;
   width: 127px;
   height: 19px;
-  right: 350px;
+  right: 615px;
   top: 50px;
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
@@ -156,7 +176,7 @@ a {
   position: absolute;
   width: 170px;
   height: 40px;
-  right: 170px;
+  right: 405px;
   top: 40px;
   background: #FFFFFF;
   border: 2px solid #66C05D;
@@ -168,7 +188,6 @@ a {
   height: 15px;
   right: 26px;
   top: 12px;
-  font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #000000;
@@ -176,13 +195,13 @@ a {
 }
 .second-line__line {
   position: absolute;
-  width: 1920px;
+  width: 100%;
   top: 120px;
   border: 1px solid #EFEFEF;
 }
 .second-line__menu {
-  margin: 135px 0 0 26.0416666667%;
-  width: 675px;
+  margin: 150px 0;
+  width: 35.15625%;
   height: 19px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -190,7 +209,343 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .second-line__link {
-  height: 19px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.sale {
+  position: relative;
+  background: #66C05D;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 604px;
+          flex: 0 1 604px;
+  color: #FFFFFF;
+}
+.sale__group {
+  margin: 192px 0 0 21.09375%;
+  height: 219px;
+  width: 16.0416666667%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sale h2 {
+  width: 308px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+.sale p {
+  width: 308px;
+  height: 35px;
+  line-height: 20px;
+}
+.sale__button {
+  width: 170px;
+  height: 40px;
+}
+.sale__bg-img {
+  position: absolute;
+  width: 859px;
+  height: 859px;
+  left: 37.7604166667%;
+  top: -117px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.sale__img {
+  position: absolute;
+  width: 677px;
+  height: 677px;
+  left: 91px;
+  top: 91px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+}
+.sale__img img {
+  width: 584px;
+  height: 584px;
+  margin: 47px;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 954px;
+  background: #EFEFEF;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  z-index: 1;
+  text-align: center;
+}
+
+.goods {
+  position: absolute;
+  width: 1110px;
+  height: 430px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  top: 80px;
+}
+.goods h3 {
+  position: absolute;
+  width: 320px;
+  height: 29px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+.goods__specials {
+  position: absolute;
+  top: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -15px;
+}
+.goods__special {
+  width: 255px;
+  height: 363px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px;
+}
+.goods__description {
+  width: 76.4705882353%;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+}
+.goods__price {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.goods__button {
+  width: 130px;
+  height: 35px;
+  background: #66C05D;
+  border-radius: 30px;
+}
+
+.contacts {
+  position: relative;
+  width: 1110px;
+  top: 610px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FFFFFF;
+  text-align: left;
+}
+.contacts > div {
+  position: relative;
+  width: 540px;
+  height: 212px;
+  background: #66C05D;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.contacts__subscribe {
+  position: relative;
+  margin: 0 15px;
+}
+.contacts_our-shops {
+  margin: 0 15px;
+}
+.contacts__subs-text {
+  position: absolute;
+  width: 48.1481481481%;
+  margin: 7.4074074074% 0 0 6.4814814815%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts__subs-text h3 {
+  margin-top: 15px;
+}
+.contacts__subs-text p {
+  line-height: 20px;
+  width: 92.4%;
+  margin-top: 15px;
+}
+.contacts__input {
+  width: 90%;
+  height: 35px;
+  border-radius: 30px;
+  margin-top: 15px;
+  padding-left: 25px;
+  color: #C4C4C4;
+}
+.contacts__subs-logo {
+  position: absolute;
+  top: 25%;
+  left: 65.7407407407%;
+}
+.contacts__shops-text {
+  position: absolute;
+  width: 31.4814814815%;
+  margin: 7.4074074074% 0 0 6.4814814815%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contacts__shops-text h3 {
+  margin-top: 15px;
+}
+.contacts__shops-text p {
+  line-height: 20px;
+  width: 92.4%;
+  margin-top: 15px;
+}
+.contacts__button {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px;
+}
+.contacts__shops-logo {
+  position: absolute;
+  top: 35.3773584906%;
+  left: 53.7037037037%;
+}
+
+.footer {
+  height: 184px;
+  width: 100%;
+  text-align: center;
+}
+.footer__contacts {
+  height: 65.2173913043%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__line {
+  width: 57.8125%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__links {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 18.018018018%;
+  margin: 0 30px;
+}
+.footer__links div {
+  width: 22%;
+  height: 45px;
+  border: 2px solid #66C05D;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer__address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  line-height: 16px;
+}
+.footer__phone {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 30px;
+}
+.footer__button {
+  width: 170px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 2px solid #66C05D;
+  border-radius: 40px;
+}
+.footer__info {
+  height: 34.7826086957%;
+  width: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+  background: #EFEFEF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

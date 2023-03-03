@@ -1,18 +1,31 @@
-// Файл обнуляющих стилей
 @import "nullstyle.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+%h3_18{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 21px;
+}
+
+%white_text_button{
+	background: #66C05D;
+	border: 2px solid #FFFFFF;
+	border-radius: 40px;
+	line-height: 16px;
+	text-align: center;
+	letter-spacing: 0.05em;
+
+	color: #FFFFFF;	
+}
 
 a{
 	color: black;
 }
 .wrapper {
-	/*position: relative;
 	width: 1920px;
-	height: 1992px;*/
 	min-width: 100%;
 	overflow: hidden;
-
 	background: #FFFFFF;
 
 	display: flex;
@@ -21,11 +34,13 @@ a{
 
 .top-line{
 	/*position: absolute;
-	width: 1920px;
-	height: 50px;*/
+	width: 1920px;*/
+	height: 50px;
 	background: #EFEFEF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	&__menu{
-		margin: 17px 0 17px 650px/1920px * 100%;
 		width: 447px;
 		height: 17px;
 		display: inline-flex;
@@ -41,21 +56,21 @@ a{
 .second-line{
 	position: relative;
 	height: 169px;
-	top: 20px;
+	margin: 20px 0 30px 0;
+	text-align: center;
+
 	&__logo{
 		position: absolute;
 		width: 80px;
 		height: 80px;
-		border: 4px double black;
-		margin: 20px 0 0 250px;
+		margin: 20px 0 0 405px;
 	}
 	&__text{
 		position: absolute;
 
 		width: 158px;
 		height: 39px;
-		left: 350px;
-		top: 41px;
+		margin: 41px 0 0 505px;
 
 		font-weight: 700;
 		font-size: 36px;
@@ -69,10 +84,9 @@ a{
 
 		width: 127px;
 		height: 19px;
-		right: 350px;
+		right: 615px;
 		top: 50px;
 
-		font-weight: 400;
 		font-size: 16px;
 		line-height: 19px;
 		color: #000000;
@@ -81,7 +95,7 @@ a{
 		position: absolute;
 		width: 170px;
 		height: 40px;
-		right: 170px;
+		right: 405px;
 		top: 40px;
 
 		background: #FFFFFF;
@@ -95,7 +109,6 @@ a{
 		right: 26px;
 		top: 12px;
 
-		font-weight: 400;
 		font-size: 14px;
 		line-height: 16px;
 
@@ -105,20 +118,330 @@ a{
 
 	&__line{
 		position: absolute;
-		width: 1920px;
+		width: 100%;
 		top: 120px;
-
 		border: 1px solid #EFEFEF;
 	}	
 	&__menu{
-		margin: 135px 0 0 500px/1920px * 100%;
-		width: 675px;
+		margin: 150px 0;
+		width: 675px/1920px*100%;
 		height: 19px;
 		display: inline-flex;
-		justify-content: space-between;
+		justify-content: space-between;		
+		align-items: center;
 	}
 
 	&__link{
-		height: 19px;
+		font-size: 16px;
+		line-height: 19px;	
+	}
+}
+
+.sale{
+	position: relative;
+	background: #66C05D;
+	flex: 0 1 604px;
+	color: #FFFFFF;
+	&__group{
+		margin: 192px 0 0 405px/1920px*100%;
+		height: 219px;
+		width: 308px/1920px*100%;
+		display: flex;
+		flex-direction: column;
+		justify-content:space-between;
+	}
+	h2{
+		width: 308px;
+		height: 44px;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 56px
+	}
+	p{
+		width: 308px;
+		height: 35px;
+		line-height: 20px;
+	}
+	&__button{
+		width: 170px;
+		height: 40px;
+		@extend %white_text_button;
+		
+	}
+	&__bg-img{
+		position: absolute;
+		width: 859px;
+		height: 859px;
+		left: 725px/1920px*100%;
+		top: -117px;
+		border-radius: 50%;
+
+		background: rgba(255, 255, 255, 0.3);
+	}
+	&__img{
+		position: absolute;
+		width: 677px;
+		height: 677px;
+		left: 91px;
+		top: 91px;
+		border-radius: 50%;
+
+		background: rgba(255, 255, 255, 0.4);
+		img{
+			width: 584px;
+			height: 584px;
+			margin: 47px;
+		}
+	}
+}
+
+.main{
+	position: relative;
+	width: 100%;
+	height: 954px;
+	background: #EFEFEF;
+	flex: 1 1 auto;
+	z-index: 1;
+	text-align: center;
+}
+.goods{
+		position: absolute;
+		width: 1110px; 
+		height: 430px;	
+		display: inline-flex;
+		top: 80px;
+
+	h3{
+		position: absolute;
+		width: 320px;
+		height: 29px;
+
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: #000000;
+
+	}
+	&__specials{
+		position: absolute;
+		top: 67px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -15px;
+
+	}
+		
+	&__special{
+		width: 255px;
+		height: 363px;
+		background: #FFFFFF;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 0 15px;
+
+	}
+
+	&__description{
+		width: 195/255*100%;
+		line-height: 20px;
+		text-align: center;
+
+		color: #333333;	}
+	&__price{
+		font-weight: 500;
+		font-size: 21px;
+		line-height: 25px;
+		text-align: center;
+		letter-spacing: 0.05em;
+	}
+	&__button{
+		width: 130px;
+		height: 35px;
+		background: #66C05D;
+		border-radius: 30px;
+	}
+
+}
+
+.contacts{
+	position: relative;
+	width: 1110px;
+	top: 610px;	
+	display: inline-flex;
+	justify-content: space-between;
+	color: #FFFFFF;
+	text-align: left;
+
+	>div{
+		position: relative;
+		width: 540px;
+		height: 212px;
+		background: #66C05D;
+		flex: 1 1 auto;
+	}
+
+	&__subscribe{
+		position: relative;
+		margin: 0 15px;
+	}
+
+	&_our-shops{
+		margin: 0 15px;
+	}
+
+	&__subs-text{
+		position: absolute;
+		width: 260px/540px*100%;
+		margin: 40px/540px*100% 0 0 35px/540px*100%;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		h3{
+			@extend %h3_18;
+			margin-top: 15px;
+		}
+
+		p{
+			line-height: 20px;
+			width: 231px/250px*100%;
+			margin-top: 15px;
+		}
+
+	}
+
+	&__input{
+		width: 225px/250px*100%;
+		height: 35px;
+
+		border-radius: 30px;
+		margin-top: 15px;
+		padding-left: 25px;
+
+		color: #C4C4C4;
+	}
+
+	&__subs-logo{
+		position: absolute;
+		top: 53px/212px*100%;
+		left: 355px/540px*100%;
+
+	}
+
+	&__shops-text{
+		position: absolute;
+		width: 170px/540px*100%;
+		margin: 40px/540px*100% 0 0 35px/540px*100%;
+		
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		h3{
+			@extend %h3_18;
+			margin-top: 15px;
+		}
+
+		p{
+			line-height: 20px;
+			width: 231px/250px*100%;
+			margin-top: 15px;
+		}
+
+	}
+
+	&__button{
+		@extend %white_text_button;
+		width: 100%;
+		height: 35px;
+
+		margin-top: 15px;
+	}
+
+	&__shops-logo{
+		position: absolute;
+		top: 75px/212px*100%;
+		left: 290px/540px*100%;
+
+	}
+}
+
+.footer{
+	height: 184px;
+	width: 100%;
+	text-align: center;
+	&__contacts{
+		height: 120px/184px*100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__line{
+		width: 1110px/1920px*100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+
+	}
+
+	&__links{
+		display: inline-flex;
+		justify-content: space-between;
+		width: 200px/1110px*100%;
+
+		div{
+			width: 22%;
+			height: 45px;
+
+			border: 2px solid #66C05D;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		margin: 0 30px;
+	}
+
+	&__address{
+		flex: 1 1 auto;
+		line-height: 16px;
+	}
+
+	&__phone{
+		font-size: 16px;
+		line-height: 19px;
+		margin: 0 30px;
+	}
+
+	&__button{
+		width: 170px;
+		height: 40px;
+		background: #FFFFFF;
+		border: 2px solid #66C05D;
+		border-radius: 40px;
+	}
+
+	&__info{
+		height: 64px/184px*100%;
+		width: 100%;
+		font-size: 12px;
+		line-height: 14px;
+
+		color: #828282;
+
+		background: #EFEFEF;
+
+		display: inline-flex;
+		justify-content: space-around;
+		align-items: center;
 	}
 }
